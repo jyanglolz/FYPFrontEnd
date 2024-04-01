@@ -19,10 +19,12 @@ const NavBar = ({ onLogout }) => {
 
     return (
         <nav style={styles.navbar}>
-            <div style={styles.logo}>
-                {/* Apply styles directly to the img element */}
-                <img src={Logo1} alt="Logo" style={{ width: '160px', height: 'auto' }} />
-            </div>
+            <a href="/task" style={{ textDecoration: 'none', color: 'inherit' }}>
+                <div style={styles.logo}>
+                    {/* Apply styles directly to the img element */}
+                    <img src={Logo1} alt="Logo" style={{ width: '160px', height: 'auto' }} />
+                </div>
+            </a>
             <ul style={{ ...styles.navList, marginRight: '30px', marginTop: '15px' }}>
                 {localStorage.getItem('Staff Status') === 'true' ? (
                     <li style={{}}>

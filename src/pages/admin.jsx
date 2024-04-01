@@ -17,7 +17,7 @@ const AdminPage = () => {
     useEffect(() => {
         const token = localStorage.getItem("token");
         if (!token) {
-            navigate('/login');
+            navigate('/signin');
             return;
         }
         axios.defaults.headers.common.Authorization = `Token ${token}`;

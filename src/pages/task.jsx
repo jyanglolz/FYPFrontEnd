@@ -32,7 +32,7 @@ const TaskPage = () => {
     useEffect(() => {
         const token = reactLocalStorage.get("token");
         if (!token) {
-            navigate('/login'); // Redirect if user is not logged in
+            navigate('/signin'); // Redirect if user is not logged in
             return;
         }
         fetchTasks();
