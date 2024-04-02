@@ -172,7 +172,7 @@ const AdminSignUpPage = () => {
                 <div style={styles.background} />
                 {/* {loading ? <LoadingScreen /> : null} */}
                 <div style={styles.content}>
-                    <h1 style={{ ...styles.title, color: '#000' }}>Admin Sign Up</h1>
+                    <h1 style={{ ...styles.title, color: '#000', paddingTop:'75px' }}>Admin Sign Up</h1>
                     <form style={styles.form}>
                         <label style={{ ...styles.label, color: '#000', gap: '10px', marginRight: '20px' }}>
                             Username:

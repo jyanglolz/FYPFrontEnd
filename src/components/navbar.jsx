@@ -73,7 +73,7 @@ const NavBar = ({ onLogout }) => {
 
 const styles = {
     navbar: {
-        background: '#333',
+        background: 'black',
         padding: '10px 20px',
         display: 'flex',
         justifyContent: 'space-between',
