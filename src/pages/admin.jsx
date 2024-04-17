@@ -30,7 +30,6 @@ const AdminPage = () => {
         axios.post('/mysite/getalluserdata', qs.stringify(payload), { timeout: 30000 })
             .then(response => {
                 setUsers(response.data);
-                console.log(response.data);
                 setLoading(false);
                 setShowUserData(true);
             })
@@ -59,10 +58,8 @@ const AdminPage = () => {
         try {
             // Exclude the password field from the editedUser object
             const { password, ...userDataWithoutPassword } = editedUser;
-            console.log('Edited User Data:', userDataWithoutPassword);
-
             const response = await axios.post('/mysite/edituserdata', userDataWithoutPassword);
-            console.log('User edited successfully:', response.data);
+            alert('User edited successfully');
             setIsEditModalOpen(false);
             showUsers();
         } catch (error) {

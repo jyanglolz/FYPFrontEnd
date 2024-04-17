@@ -38,7 +38,7 @@ const HomePage = () => {
                 <div style={styles.content}>
                     {/* Add the logo */}
                     <img src={Logo1} alt="Logo" style={styles.logo} />
-                    <h1 style={styles.title}>Welcome to Task Management Web Application - SecuTask</h1>
+                    <h1 style={styles.title}>Welcome to the most secure Task Management Web Application</h1>
                     {/* Button to navigate to the Signup Page */}
                     <Link to="/signup" style={styles.link}>
                         <button style={styles.button}>Go to Signup</button>

@@ -68,6 +68,7 @@ const VerifyPage = () => {
 			localStorage.setItem('token', token);
 
 			// Redirect to the task page after successful verification
+			alert('Account Verification Successful!');
 			navigate('/task');
 		} catch (error) {
 			console.error('Error verifying code:', error);
