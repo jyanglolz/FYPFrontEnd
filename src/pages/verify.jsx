@@ -81,8 +81,8 @@ const VerifyPage = () => {
 	return (
 		<div>
 			<Helmet>
-                <title>Verify Page</title>
-                <meta name="title" content="Verify Page" />
+                <title>Verification Page</title>
+                <meta name="title" content="Verification Page" />
             </Helmet>
 				<div style={styles.container}>
 				<div style={styles.background} />
