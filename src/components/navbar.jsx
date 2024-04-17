@@ -39,7 +39,7 @@ const NavBar = ({ onLogout }) => {
                 {localStorage.getItem('token') ? (
                     null
                 ) : (
-                    <li><Link to="/signin" style={styles.navLink}>SignIn</Link></li>
+                    <li><Link to="/signin" style={styles.navLink}>Signin</Link></li>
                 )}
 
                 {localStorage.getItem('token') ? (

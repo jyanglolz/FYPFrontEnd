@@ -12,8 +12,6 @@ import TaskPage from "./pages/task.jsx";
 import TemplatePage from "./pages/template.jsx";
 import AdminPage from "./pages/admin.jsx";
 import ExampleModal from "./pages/test.jsx";
-import ForgotPasswordPage from "./pages/forgotpassword.jsx";
-import ResetPasswordPage from "./pages/resetpassword.jsx";
 import DashboardPage from "./pages/dashboard.jsx";
 
 const App = () => {
@@ -37,8 +35,6 @@ const App = () => {
                 <Route path="/adminsignup" element={<AdminSignUpPage/>}/>
                 <Route path="/signin" element={<SignInPage onLogin={handleLogin} />}/>
                 <Route path="/verify" element={<VerifyPage/>}/>
-                {/* <Route path="/forgotpassword" element={<ForgotPasswordPage/>}/> */}
-                {/* <Route path="/resetpassword" element={<ResetPasswordPage/>}/> */}
                 <Route path="/dashboard" element={<DashboardPage/>}/>
                 <Route path="/task" element={<TaskPage/>}/>
                 <Route path="/template" element={<TemplatePage/>}/>

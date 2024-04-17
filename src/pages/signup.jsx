@@ -61,6 +61,15 @@ const SignUpPage = () => {
 
         // Validate all fields
 
+        // Username
+        if (formData.username.length < 1) {
+            setFormData({ ...formData, nameError: true });
+            hasError = true;
+            errorMessageReborn.push("Please enter your Username");
+        } else {
+            setFormData({ ...formData, nameError: false });
+        }
+
         // Email
         if (!validateEmail(formData.email)) {
             hasError = true;
