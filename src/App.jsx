@@ -11,7 +11,6 @@ import VerifyPage from "./pages/verify.jsx";
 import TaskPage from "./pages/task.jsx";
 import TemplatePage from "./pages/template.jsx";
 import AdminPage from "./pages/admin.jsx";
-import ExampleModal from "./pages/test.jsx";
 import DashboardPage from "./pages/dashboard.jsx";
 
 const App = () => {
@@ -39,7 +38,6 @@ const App = () => {
                 <Route path="/task" element={<TaskPage/>}/>
                 <Route path="/template" element={<TemplatePage/>}/>
                 <Route path="/admin" element={<AdminPage/>}/>
-                <Route path="/test" element={<ExampleModal/>}/>
             </Routes>
         </BrowserRouter>
     );
