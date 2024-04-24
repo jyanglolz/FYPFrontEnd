@@ -17,13 +17,6 @@ const HomePage = () => {
         // launchFunc();
     }, []); // Empty dependency array ensures that this effect runs only once on mount
 
-    // const launchFunc = () => {
-    //     // If the user is logged in, redirect to task
-    //     if (reactLocalStorage.get("token")) {
-    //         navigate('/task');
-    //     }
-    //     // Add other logic as needed
-    // };
 
     const navigate = useNavigate();
 
@@ -67,7 +60,7 @@ const styles = {
         left: 0,
         width: '100%',
         height: '100%',
-        backgroundImage: 'url("/assets/images/homepage.png")', // Replace with your background image URL
+        backgroundImage: 'url("/assets/images/homepage.png")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         opacity: 0.5,
