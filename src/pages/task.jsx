@@ -274,7 +274,7 @@ const styles = {
         left: 0,
         width: '100%',
         height: '100%',
-        backgroundImage: 'url("https://app-cdn.clickup.com/login__bg.8e44616319b55ac1.svg")', // Replace with your background image URL
+        backgroundImage: 'url("https://app-cdn.clickup.com/login__bg.8e44616319b55ac1.svg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         opacity: 0.5, // Adjust the opacity as needed
