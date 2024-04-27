@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { reactLocalStorage } from 'reactjs-localstorage';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import { useEffect } from 'react';
 
 const SignInPage = ({ onLogin }) => {
     const navigate = useNavigate();
@@ -12,6 +13,24 @@ const SignInPage = ({ onLogin }) => {
         password: '',
     });
     const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        const token = reactLocalStorage.get("token");
+
+        if (token) {
+            axios.defaults.headers.common.Authorization = `Token ${token}`;
+        }
+
+        launchFunc();
+    }, []); // Empty dependency array ensures that this effect runs only once on mount
+
+    const launchFunc = () => {
+        // If the user is logged in, redirect to task
+        if (reactLocalStorage.get("token")) {
+            navigate('/task');
+        }
+        // Add other logic as needed
+    };
 
     const handleInputChange = (event) => {
         setFormData({ ...formData, [event.target.name]: event.target.value });
