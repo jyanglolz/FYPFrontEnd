@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'; // Importing useEffect only once is enough
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { reactLocalStorage } from 'reactjs-localstorage';
@@ -26,7 +26,7 @@ const AdminPage = () => {
 
     const showUsers = () => {
         setLoading(true);
-        const payload = {}; // Add any payload data if needed
+        const payload = {};
         axios.post('/mysite/getalluserdata', qs.stringify(payload), { timeout: 30000 })
             .then(response => {
                 setUsers(response.data);
@@ -44,7 +44,6 @@ const AdminPage = () => {
             id: user.id,
             username: user.username,
             email: user.email,
-            // password: user.password, // Add password if it's needed for editing
             first_name: user.first_name,
             last_name: user.last_name,
             is_staff: user.is_staff,
@@ -128,7 +127,6 @@ const AdminPage = () => {
                             <Label for="editDateJoined">Date Joined:</Label>
                             <Input type="text" id="editDateJoined" readOnly value={editedUser.date_joined} onChange={(e) => setEditedUser({ ...editedUser, date_joined: e.target.value })} />
                         </FormGroup>
-                        {/* Add other user fields to edit if needed */}
                     </form>
                 </ModalBody>
                 <ModalFooter>
@@ -168,7 +166,6 @@ const AdminPage = () => {
                                         Delete
                                     </Button>
                                 </td>
-                                {/* Add other table data cells if needed */}
                             </tr>
                         ))}
                     </tbody>

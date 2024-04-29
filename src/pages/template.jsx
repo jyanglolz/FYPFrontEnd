@@ -24,7 +24,6 @@ const TemplatePage = ({}) => {
         // if (reactLocalStorage.get("token")) {
         //     navigate('/task');
         // }
-        // Add other logic as needed
     };
 
     const navigate = useNavigate();

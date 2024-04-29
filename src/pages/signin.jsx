@@ -29,7 +29,6 @@ const SignInPage = ({ onLogin }) => {
         if (reactLocalStorage.get("token")) {
             navigate('/task');
         }
-        // Add other logic as needed
     };
 
     const handleInputChange = (event) => {

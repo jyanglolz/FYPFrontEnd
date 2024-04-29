@@ -30,8 +30,6 @@ const VerifyPage = () => {
 		if (reactLocalStorage.get("token")) {
 			navigate('/task');
 		}
-
-		// Add other logic as needed
 	};
 
   	const handleInputChange = (event) => {

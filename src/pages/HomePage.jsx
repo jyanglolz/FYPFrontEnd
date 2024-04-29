@@ -13,7 +13,6 @@ const HomePage = () => {
         if (token) {
           axios.defaults.headers.common.Authorization = `Token ${token}`;
         }
-
         // launchFunc();
     }, []); // Empty dependency array ensures that this effect runs only once on mount
 

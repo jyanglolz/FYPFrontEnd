@@ -3,7 +3,6 @@ import axios from 'axios';
 import qs from 'qs';
 import { Helmet } from 'react-helmet';
 import { Link, useNavigate } from 'react-router-dom';
-import LoadingScreen from '../components/loadingscreen';
 import { reactLocalStorage } from 'reactjs-localstorage';
 
 
@@ -38,7 +37,6 @@ const SignUpPage = () => {
         if (reactLocalStorage.get("token")) {
             navigate('/task');
         }
-        // Add other logic as needed
     };
 
     const checkUsernameValidity = async () => {
@@ -173,7 +171,6 @@ const SignUpPage = () => {
             </Helmet>
             <div style={styles.container}>
                 <div style={styles.background} />
-                {/* {loading ? <LoadingScreen /> : null} */}
                 <div style={styles.content}>
                     <h1 style={{ ...styles.title, color: '#000', paddingTop:'75px' }}>Sign Up</h1>
                     <form style={styles.form}>
