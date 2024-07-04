@@ -4,11 +4,11 @@ Overview
 
 This repository contains the frontend code for the "Enhancing Security in Task Management Web Application" project. The application is built using ReactJS and aims to provide a secure and user-friendly task management system with enhanced security features. 
 
-**Install dependencies**
+**1. Install dependencies**
 
 npm install
 
-**Start the development server**
+**2. Start the development server**
 
 npm start
 
