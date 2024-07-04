@@ -14,23 +14,35 @@ npm start
 
 The application should now be running at http://localhost:3000.
 
-Features
-User Authentication:
+**Features**
+**User Authentication:**
 
 Enforce strong password complexity rules.
+
 Implement Two-Factor Authentication (2FA) for added security.
-Task Management:
+
+
+**Task Management:**
 
 Create, update, view, and delete tasks.
+
 Set and update task statuses.
-Administrator Privileges:
+
+
+**Administrator Privileges:**
 
 Manage individual user accounts.
+
 CRUD operations on tasks.
-Security Enhancements:
+
+
+**Security Enhancements:**
 
 Password encryption.
+
 Token-based verification.
-User Experience:
+
+
+**User Experience:**
 
 User-friendly interface.
