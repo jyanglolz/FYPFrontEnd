@@ -15,6 +15,7 @@ npm start
 The application should now be running at http://localhost:3000.
 
 **Features**
+
 **1. User Authentication:**
 
 - Enforce strong password complexity rules.
