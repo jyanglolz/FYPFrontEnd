@@ -3,7 +3,6 @@ import axios from 'axios';
 import qs from 'qs';
 import { Helmet } from 'react-helmet';
 import { Link, useNavigate } from 'react-router-dom';
-import LoadingScreen from '../components/loadingscreen';
 import { reactLocalStorage } from 'reactjs-localstorage';
 
 
@@ -23,9 +22,8 @@ const AdminSignUpPage = () => {
     const [usernameErrorMessage, setUsernameErrorMessage] = useState('');
     const navigate = useNavigate();
 
-    // Add state for staff and superuser status
+    // Add state for staff status
     const [isStaff, setIsStaff] = useState(false);
-    // const [isSuperuser, setIsSuperuser] = useState(false);
 
     useEffect(() => {
         const token = reactLocalStorage.get("token");
@@ -42,7 +40,7 @@ const AdminSignUpPage = () => {
         if (reactLocalStorage.get("token")) {
             navigate('/task');
         }
-        // Add other logic as needed
+
     };
 
     const checkUsernameValidity = async () => {
@@ -100,7 +98,6 @@ const AdminSignUpPage = () => {
         } else {
             setFormData({ ...formData, nameError: false });
         }
-        // Add other validations as needed
 
         if (hasError) {
             alert(errorMessageReborn.join("\n"));
@@ -170,7 +167,6 @@ const AdminSignUpPage = () => {
             </Helmet>
             <div style={styles.container}>
                 <div style={styles.background} />
-                {/* {loading ? <LoadingScreen /> : null} */}
                 <div style={styles.content}>
                     <h1 style={{ ...styles.title, color: '#000', paddingTop:'75px' }}>Admin Sign Up</h1>
                     <form style={styles.form}>
@@ -289,7 +285,7 @@ const styles = {
         left: 0,
         width: '100%',
         height: '100%',
-        backgroundImage: 'url("https://app-cdn.clickup.com/login__bg.8e44616319b55ac1.svg")', // Replace with your background image URL
+        backgroundImage: 'url("https://app-cdn.clickup.com/login__bg.8e44616319b55ac1.svg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         opacity: 0.5, // Adjust the opacity as needed
